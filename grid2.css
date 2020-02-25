@@ -1,0 +1,76 @@
+body {
+    background-color: white;
+}
+
+.margin{
+    padding-top: 30px;
+}
+.contenedor {
+    display: grid; /* debe de llevarlo */
+    grid-template-columns: repeat(5, 1fr); /* divisiones 6 de 1fr, o divide la patalla en 8 partes*/
+   /* gap: 1em;  medidas entre las cajas, la separacion*/
+    grid-auto-rows: minmax(100px, auto); /* mínimo de 100px, máx automatico */
+    align-items: stretch; /* para que se espanda al tamaño de las cajas */
+}
+
+.contenedor div{ /*para aplicarselo a todos los div del cotenedor */
+    /*background-color: pink;
+    border: 1px solid red;;*/
+    text-align: center;
+    
+}
+
+.contenedor div:hover {
+    border: 1px solid #f1c40f;
+}
+ /*al pasarlo se pone el borde de las cajas */
+
+
+.logo{
+    grid-column: 1/4; /* de 1 a 4*/ 
+    color: white;
+    background-color: black;
+}
+
+.slogan{
+    grid-column: 4/6; /* de 1 a 4*/
+    background-color: black;
+    color: white;
+   
+    text-align: left;
+}
+
+.contenido{
+    grid-column: 1/6; /* de 1 a 4*/
+    grid-row: 2/4;
+}
+
+.c1{
+    grid-column: 1/2; /* de 1 a 4*/
+}
+
+.c2{
+    grid-column: 2/3; /* de 1 a 4*/
+}
+
+.c3{
+    grid-column: 3/4;
+}
+.c4{
+    grid-column: 4/5; /* de 1 a 4*/
+}
+
+.c5{
+    grid-column: 5/6; /* de 1 a 4*/
+}
+
+.botones{
+    grid-column: 1/6;
+            padding: 10px;
+            font-weight: 600;
+            font-size: 13px;
+            
+}
+
+
+
